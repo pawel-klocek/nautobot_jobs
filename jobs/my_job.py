@@ -9,7 +9,7 @@ class SimpleLogJob(Job):
         description="This is me doing code "
     )
 
-def run(self,**kwargs):
-    self.logger.info(str(kwargs))
-    return kwargs
+    def run(self,**kwargs):
+        self.logger.info(str(kwargs))
+        return kwargs
 
